@@ -123,7 +123,7 @@ header
 			.gp
 				background-position -129px -90px	
 
-nav
+#main_nav
 	width 960px
 	background url('../images/sprite_fondos.png') repeat-x
 	text-align right
@@ -261,7 +261,7 @@ nav
 	width 960px
 	margin-top 14px
 	border-top 1px solid #d8d8d8
-	padding 28px 10px 40px
+	padding 28px 10px 0
 
 	.title_news
 		height 32px
@@ -313,6 +313,39 @@ nav
 			width 300px
 			display block
 			padding 10px 10px 0
+			position relative
+			overflow hidden
+
+			.play_video
+				background-color color_lila
+				background-image url('../images/sprite.png') 
+				background-position -71px -180px
+				background-repeat no-repeat
+				width 38px
+				height 38px
+				display block
+				position absolute
+				top 70px
+				left 131px
+				border-radius(19px)
+				opacity(0.7)
+				box-shadow 1px 1px 4px 0px #6d6d6d
+				z-index 10
+
+			.exclusive_label
+				width 140px
+				height 140px
+				border-radius (70px)	
+				position absolute	
+				background-color color_lila
+				box-shadow 1px 1px 4px 0px #6d6d6d
+				color #fff
+				font-size 1.1em
+				top -109px 
+				left -9px
+				padding 109px 0 0 39px
+				opacity(0.7)
+
 		.text 
 			height 77px 
 			font-size 1.1em
@@ -334,17 +367,296 @@ nav
 			.e1
 				width 127px
 				padding-top 8px
-			.e2 a 
+			.e2 a, .e4 a
 				width 28px
 				height 20px
 				background url('../images/sprite.png') 0 -191px
 				display block
 				margin-top 4px
+			.e4 a
+				background-position -41px -191px
 			.e3
 				padding 8px 20px 0 0
-				background url('../images/sprite.png') 205px -188px
+				background url('../images/sprite.png') 110px -216px
 				width 125px
 				text-align right
+				background-repeat no-repeat
 
 	article:nth-child(3n+1)
 		margin-left 0 
+
+	.paginate
+		border-bottom 1px solid #d8d8d8
+		border-top 1px solid #d8d8d8
+		height 40px
+		margin-left -10px
+		margin-right -10px
+		padding 9px 15px 0 0 
+		text-align right
+
+		li 
+			display inline-block
+			width 16px
+			height 16px
+			border-radius(8px)
+			text-align center
+			line-height 17px
+
+			a 
+				font-size 0.9em
+				display inline-block
+				color #6d6d6d
+				line-height auto
+								
+		li:hover, .active			
+			background-color color_lila			
+
+			a
+				color #fff
+				text-decoration none
+#big_banner
+	width 960px
+	height 90px
+	margin 14px 0
+	display block
+	background-color #ccc
+
+#videos
+	margin-bottom 14px
+	width 960px
+	background-color #fff
+	padding 10px 10px 40px
+	border-bottom 1px solid #d8d8d8
+	border-top 1px solid #d8d8d8
+
+	.left_video
+		width 604px
+		display inline-block
+		vertical-align top
+
+		.video_paginate
+			text-align center
+
+	.right_video
+		margin-left 16px
+		width 320px
+		display inline-block
+		vertical-align top
+
+		.playing
+			text-align right
+			padding-right 5px
+			padding-top 5px
+		.release_date
+			text-align center
+			font-size 1.1em
+
+			a
+				background-color color_lila
+				height 22px 
+				padding 0 10px
+				display inline-block
+				color #fff
+				border-radius(11px)
+				margin-left 5px
+			a:hover
+				text-decoration none
+	
+	.video_title
+		font-size 1.8em
+		text-align center
+		line-height 30px 
+		height 30px
+#ads	
+	width 960px
+	margin-bottom 14px
+	padding 10px 10px 40px
+	border-bottom 1px solid #d8d8d8
+	border-top 1px solid #d8d8d8
+	background-color #fff
+
+	.item
+		width 216px
+		display inline-block
+		vertical-align top
+		margin-left 24px	
+
+		.add_title
+			font-size 1.4em
+			line-height 22px
+			height 27px
+			text-align center 
+
+		.add_content				
+			box-shadow 1px 2px 7px 0px #5f5f5f
+
+			.link
+				height 27px
+				background-color #e3e3e3
+				text-align right
+				padding 3px 5px 0 0
+
+				a 
+					color #6D6D6D
+
+					span
+						width 22px
+						height 22px
+						border-radius(11px)
+						margin-left 7px
+						background-color color_lila
+						display inline-block
+						color #fff
+						text-align center
+				a:hover
+					text-decoration none
+	.item:first-child
+		margin-left 0
+
+footer
+	margin 14px 0 40px 0
+	width 960px
+	background-color #fff
+	border-top 1px solid #d8d8d8
+	font-family 'Myriad Pro'
+	color #5b5b5b
+
+	.sponsors
+		border-bottom 1px solid #d8d8d8
+		border-top 1px solid #d8d8d8
+
+	.footer_rights
+		height 25px
+		font-size 0.75em
+		text-align center
+		line-height 25px
+
+	#footer_nav
+		text-align center
+
+		li
+			display inline-block
+			vertical-align top
+			font-size 0.85em
+			line-height 40px
+
+			a
+				color #6d6d6d
+
+				.icon
+					display inline-block
+					width 6px
+					height 6px
+					border-radius(3px)
+					margin 17px 5px 0
+					background-color color_lila 
+					vertical-align top
+
+			a:hover
+				text-decoration none
+				color color_lila
+
+		li:first-child .icon
+			display none
+	
+	.search_footer
+		height 50px
+		text-align center
+		margin-bottom 20px
+
+		label 
+			font-weight 400
+			line-height 14px
+			font-size 0.95em
+			margin-bottom 0
+		.box
+			width 284px
+			height 26px
+			background-color #c5c5c5
+			margin-left 338px
+			line-height 17px
+			line-height 15px
+			text-align left
+			border-radius(13px)
+
+			.input_search 
+				border 0
+				background none
+				color #6D6D6D
+				margin 3px 0 0 13px
+				outline 0
+				display inline-block
+				vertical-align top
+				width 238px
+
+			.btn_search
+				border 0
+				background url('../images/sprite.png') -2px -337px
+				outline 0
+				width 23px
+				height 20px
+				display inline-block
+				vertical-align top
+				margin-top 2px
+
+	.footer_social
+		padding-left 45px
+		width 634px
+		vertical-align top
+		display inline-block
+
+		li 
+			width 145px
+			vertical-align top
+			display inline-block
+			text-align right
+			color #5b5b5b
+			font-size 0.85em
+
+			a
+				display inline-block
+				width 40px
+				height 40px
+				background url('../images/sprite.png')
+			.d1
+				display inline-block
+				margin-right 10px
+				vertical-align top
+				margin-top 9px
+		.fb a
+			background-position 0 -291px
+		.fb a:hover
+			background-position 0 -249px
+		.tw a 
+			background-position -46px -291px
+		.tw a:hover
+			background-position -46px -249px
+		.gp a
+			background-position -95px -289px
+		.gp a:hover
+			background-position -95px -247px
+	.tags
+		font-size 0.75em
+		text-align center
+		padding 13px 0 25px 0
+		line-height 15px
+
+	.footer_devices
+		width 326px
+		vertical-align top
+		display inline-block
+		padding 12px 0 0 18px
+		
+
+		span
+			line-height 17px
+			text-align right
+			font-size 0.85em
+			display inline-block
+			vertical-align top
+
+		.fd2
+			background url('../images/sprite.png') -144px -188px no-repeat
+			width 84px
+			height 73px
+			margin-left 8px
